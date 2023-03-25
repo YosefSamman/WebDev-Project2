@@ -10,6 +10,6 @@
     cursor: pointer;
 }
 
-.background{
-    background-color: bisque;
+body {
+    background-color: rgb(236, 170, 89);
 }
