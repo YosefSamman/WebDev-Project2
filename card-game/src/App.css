@@ -1,0 +1,46 @@
+.card {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+.board {
+  text-align: center;
+}
+
+body {
+  background-color: rgb(236, 170, 89);
+}
+
+button {
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 6px;
+  background: #7d2ae8;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+button:active{
+  transform: scale(0.96);
+}
+
+/* Set the width and height of each card */
+.card {
+  width: 100px;
+  height: 150px;
+  margin: 10px;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+/* Set the width and height of each image */
+.card img {
+  width: 100%;
+  height: 100%;
+}
