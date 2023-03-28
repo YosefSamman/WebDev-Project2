@@ -9,6 +9,9 @@
     font-size: 24px;
     cursor: pointer;
 }
+.board {
+    text-align: center;
+}
 
 body {
     background-color: rgb(236, 170, 89);
