@@ -1,6 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
+import Card from './Components/Card.js';
+import cardback from './Components/cardback.jpg';
+import pikachu from './Components/pika.jpg';
+import charizard from './Components/charizard.jpeg';
+import mewtwo from './Components/mewtwo.png';
+import meowth from './Components/meowth.png';
+import latios from './Components/latios.png';
+import latias from './Components/latias.png';
 
 function App() {
   return (

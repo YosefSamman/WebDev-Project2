@@ -17,13 +17,12 @@ body {
   background-color: rgb(236, 170, 89);
 }
 
-button {
+button{
   color: #fff;
   padding: 8px 22px;
   border-radius: 6px;
   background: #7d2ae8;
   transition: all 0.2s ease;
-  text-align: center;
 }
 
 button:active{
