@@ -47,11 +47,17 @@ function App() {
     setCards(cardshuffle)
   }
 
+  const resetTurn = () => {
+    setPick1(null)
+    setPick2(null)
+    setTurns(priorTurn => priorTurn+1)
+  }
 
 
   return (
     <div className="App">
       <h1>Memory Game</h1>
+      <h2> Turns: {turns}</h2>
         <button onClick={shuffle}>New Game</button>
       <div class="grid">
       <div>
