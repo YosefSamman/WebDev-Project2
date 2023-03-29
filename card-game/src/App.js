@@ -22,11 +22,6 @@ function App() {
 
   const [cards, setCards] = useState([])
 
-  //shuffle the cards
-  const shuffle = () => {
-
-  }
-
   //check if game is over
   const isGameOver = () => {
     let clear = true;
@@ -42,6 +37,15 @@ function App() {
   const [pick1, setPick1] = useState(null)
   const [pick2, setPick2] = useState(null)
   const [turns, setTurns] = useState(0)
+
+  //shuffle the cards
+  const shuffle = () => {
+    const cardshuffle = [...cardInfo, ...cardInfo].sort( () => Math.random()-0.5).map( (card) =>({ ...card, id: Math.random()}))
+    setPick1(null)
+    setPick2(null)
+    setTurns(0)
+    setCards(cardshuffle)
+  }
 
 
 
