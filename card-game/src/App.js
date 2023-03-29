@@ -39,6 +39,12 @@ function App() {
     return clear;
   }
 
+  const [pick1, setPick1] = useState(null)
+  const [pick2, setPick2] = useState(null)
+  const [turns, setTurns] = useState(0)
+
+
+
   return (
     <div className="App">
       <h1>Memory Game</h1>
