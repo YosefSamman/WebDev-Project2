@@ -15,6 +15,7 @@ export default function Card(card, completed, flipped, disabled, choicehandler) 
         <div className = "card">
             <div className = {flipped ? "flipped" : ""}>
                 <img className = "back" src='cardback.png' onClick={handleClick} alt="back card"/>
+                <img className="front" src={card.img} alt="card front" />
             </div>
         </div>
     )
