@@ -1,13 +1,21 @@
 import './Card.css';
 
-export default function Card(card, completed, flipped, disabled, handler) {
+export default function Card(card, completed, flipped, disabled, choicehandler) {
     if(completed() === true){
         window.alert("You have completed");
     }
 
-    const handler = () => {
+    const handleClick = () => {
         if(!disabled){
-            handler(card);
+            choicehandler(card)
         }
     }
+
+    return (
+        <div className = "card">
+            <div className = {flipped ? "flipped" : ""}>
+                <img className = "back" src='cardback.png' onClick={handleClick} alt="back card"/>
+            </div>
+        </div>
+    )
 }
