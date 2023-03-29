@@ -52,7 +52,7 @@ function App() {
   return (
     <div className="App">
       <h1>Memory Game</h1>
-        <button>New Game</button>
+        <button onClick={shuffle}>New Game</button>
       <div class="grid">
       <div>
         <div class="card">
