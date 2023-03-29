@@ -9,7 +9,18 @@ import meowth from './Components/meowth.png';
 import latios from './Components/latios.png';
 import latias from './Components/latias.png';
 
+const cardInfo = [
+  {img: pikachu, state: false},
+  {img: charizard, state: false},
+  {img: meowth, state: false},
+  {img: mewtwo, state: false},
+  {img: latios, state: false},
+  {img: latias, state: false}
+]
+
 function App() {
+
+  
 
   return (
     <div className="App">
