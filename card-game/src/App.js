@@ -1,7 +1,7 @@
 import './App.css';
 import { useEffect, useState } from 'react';
 import Card from './Components/Card.js';
-import cardback from './Components/cardback.jpg';
+import cardback from './Components/cardback.png';
 import pikachu from './Components/pika.jpg';
 import charizard from './Components/charizard.jpeg';
 import mewtwo from './Components/mewtwo.png';
@@ -10,14 +10,15 @@ import latios from './Components/latios.png';
 import latias from './Components/latias.png';
 
 function App() {
+
   return (
     <div className="App">
       <h1>Memory Game</h1>
-    <button>New Game</button>
-    <div class="board">
+        <button>New Game</button>
+      <div class="grid">
       <div>
         <div class="card">
-          <img src="card.png" alt="Card 1"></img>
+          <img src="cardback" alt="Card 1"></img>
         </div>
         <div class="card">
           <img src="card.png" alt="Card 2"></img>
@@ -57,7 +58,7 @@ function App() {
           <img src="card.png" alt="Card 12"></img>
         </div>
       </div>
-    </div>
+      </div>
     </div>
   );
 }
