@@ -6,7 +6,25 @@
   display: inline-block;
 }
 
-  .card img {
+.card img {
     width: 100%;
     height: 100%;
-  }
+}
+
+.card .front {
+    transform: rotateY(90deg);
+    transition: 0.3s;
+    position: absolute;
+}
+.flipped .front {
+    transform: rotateY(0deg);
+    transition-delay: 0.3s;
+}
+.card .back {
+    transition: 0.3s;
+    transition-delay: 0.3s;
+}
+.flipped .back {
+    transform: rotateY(90deg);
+    transition-delay: 0.1s;
+}
