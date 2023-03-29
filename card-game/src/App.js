@@ -20,7 +20,24 @@ const cardInfo = [
 
 function App() {
 
-  
+  const [cards, setCards] = useState([])
+
+  //shuffle the cards
+  const shuffle = () => {
+
+  }
+
+  //check if game is over
+  const isGameOver = () => {
+    let clear = true;
+    for (let i = 0; i < cards.length; i++) {
+      if (cards[i].state === false) {
+        clear = false;
+        return;
+      }
+    }
+    return clear;
+  }
 
   return (
     <div className="App">
