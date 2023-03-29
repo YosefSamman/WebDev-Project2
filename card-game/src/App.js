@@ -62,7 +62,7 @@ function App() {
       <div class="grid">
       <div>
         <div class="card">
-          <img src="cardback" alt="Card 1"></img>
+          <img src="./Components/cardback.png" alt="Card 1"></img>
         </div>
         <div class="card">
           <img src="card.png" alt="Card 2"></img>
